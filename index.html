@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myteam</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a class="site-header__logo header-logo" href="#">
+        <img class="header-logo__img" src="img/myteam.svg" alt="site logo" width="159" height="40">
+      </a>
+      <nav class="site-header__nav site-header-nav">
+        <ul class="site-header-nav__list nav-list">
+          <li class="nav-list__item nav-item">
+            <a class="nav-item__link" href="#">home</a>
+          </li>
+          <li class="nav-list__item nav-item">
+            <a class="nav-item__link" href="#">about</a>
+          </li>
+          <li class="nav-list__item nav-item--contact">
+            <a class="nav-item__link--contact" href="#">contact us</a>
+          </li>
+        </ul>
+
+      </nav>
+      <button class="menu-toggler" type="button"></button>
+    </div>
+  </header>
+
+  <script>
+    var elMenuToggler = document.querySelector('.menu-toggler')
+    var elMenu = document.querySelector('.site-header-nav')
+
+    elMenuToggler.addEventListener('click', function ()
+    {
+      elMenu.classList.toggle('site-header-nav-open')
+    });
+  </script>
+</body>
+</html>
