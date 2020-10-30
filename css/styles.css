@@ -131,6 +131,8 @@ img {
 
 .nav-item--contact {
   margin-left: auto;
+  min-width: 153px;
+  min-height: 48px;
 }
 
 .nav-item__link {
@@ -231,6 +233,12 @@ img {
 
   .nav-list {
     display: flex;
+  }
+
+  .nav-item--contact {
+    min-width: 145px;
+    min-height: 40px;
+
   }
 }
 
