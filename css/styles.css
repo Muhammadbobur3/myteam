@@ -112,7 +112,7 @@ img {
   background-color: #2C6269;
   width: 65%;
   height: 100%;
-  padding: 112px 48px 0 48px;
+  padding: 112px 0px 0 48px;
 }
 
 .site-header-nav-open .nav-list > .nav-item--contact {
@@ -131,8 +131,6 @@ img {
 
 .nav-item--contact {
   margin-left: auto;
-  min-width: 153px;
-  min-height: 48px;
 }
 
 .nav-item__link {
@@ -205,6 +203,7 @@ img {
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
+    min-width: 100px;
   }
 
 }
@@ -236,10 +235,9 @@ img {
   }
 
   .nav-item--contact {
-    min-width: 145px;
-    min-height: 40px;
-
+    min-width: 100px;
   }
+
 }
 
 @media
