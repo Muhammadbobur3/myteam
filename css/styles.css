@@ -176,6 +176,131 @@ img {
   background-size: 20px 17px;
 }
 
+.results-section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #004047;
+}
+
+.result__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results-section__title {
+  max-width: 932px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.results-section__span {
+  color: #79C8C7;
+}
+
+.result-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 36px;
+}
+
+.result-item {
+  max-width: 349px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-item {
+  background-image: url("../img/“.png");
+  background-repeat: no-repeat;
+  background-size: 67px 56px;
+  background-position: center calc(50% - 90px);
+}
+
+.result-item__girl::after {
+  content: "";
+  width: 62px;
+  height: 62px;
+  background-image: url("../img/girl-avatar.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #C4FFFE;
+}
+
+.result-item__woman::after {
+  content: "";
+  width: 62px;
+  height: 62px;
+  background-image: url("../img/woman-avatar.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #C4FFFE;
+}
+
+.result-item__man::after {
+  content: "";
+  width: 62px;
+  height: 62px;
+  background-image: url("../img/man-avatar.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #C4FFFE;
+}
+
+.result-item__quote {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.result-item__name {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+  margin: 0;
+  margin-bottom: 2px;
+  margin-top: auto;
+}
+
+.result-item__text {
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 32px;
+}
 
 
 @media only screen and (max-width: 768px) {
