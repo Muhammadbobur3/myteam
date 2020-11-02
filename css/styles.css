@@ -149,7 +149,7 @@ img {
 .nav-item__link--contact {
   text-decoration: none;
   padding: 10px 33px;
-  font-family: Livvic;
+  font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -216,7 +216,7 @@ img {
 
 .result-item {
   max-width: 349px;
-  padding-top: 90px;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,7 +226,7 @@ img {
   background-image: url("../img/“.png");
   background-repeat: no-repeat;
   background-size: 67px 56px;
-  background-position: center calc(50% - 90px);
+  background-position: center calc(50% - 100px);
 }
 
 .result-item__girl::after {
@@ -266,6 +266,7 @@ img {
 }
 
 .result-item__quote {
+  min-width: 350px;
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
@@ -329,6 +330,34 @@ img {
     font-size: 18px;
     line-height: 28px;
     min-width: 100px;
+  }
+
+  .results-section__title {
+    max-width: 465px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .result-list {
+    max-width: 573px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result-item__quote {
+    min-width: 573px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
   }
 
 }
