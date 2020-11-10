@@ -4,59 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>myteam</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <div class="container site-header__container">
-      <a class="site-header__logo header-logo" href="#">
-        <img class="header-logo__img" src="img/myteam.svg" alt="site logo" width="159" height="40">
+      <a class="site-header__logo" href="#">
+        <img class="site-header__logo-img" src="img/myteam.svg" alt="site logo" width="159" height="40">
       </a>
-      <nav class="site-header__nav site-header-nav">
-        <ul class="site-header-nav__list nav-list">
-          <li class="nav-list__item nav-item">
-            <a class="nav-item__link" href="#">home</a>
+      <nav class="site-header__nav sitenav">
+        <ul class="site-header-nav__list sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">home</a>
           </li>
-          <li class="nav-list__item nav-item">
-            <a class="nav-item__link" href="#">about</a>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">about</a>
           </li>
-          <li class="nav-list__item nav-item--contact">
-            <a class="nav-item__link--contact" href="#">contact us</a>
+          <li class="sitenav__item--contact">
+            <a class="sitenav__link--contact" href="#">contact us</a>
           </li>
         </ul>
 
       </nav>
-      <button class="menu-toggler" type="button"></button>
+      <button class="button" type="button"></button>
     </div>
   </header>
 
   <main class="site-main">
-    <section class="results-section">
+    <section class="results">
       <div class="container">
-        <div class="container result__container">
-          <h2 class="results-section__title">
+        <div class="results__container">
+          <h2 class="results__title">
             Delivering real results for top companies. Some of our
-            <span class="results-section__span">success stories.</span>
+            <span class="results__span">success stories.</span>
           </h2>
-          <ul class="results-section__list result-list">
-            <li class="result-list__item result-item result-item__girl">
-              <blockquote class="result-item__quote">The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.</blockquote>
-              <p class="result-item__name">Kady Baker</p>
-              <p class="result-item__text">Product Manager at Bookmark</p>
+          <ul class="results__list">
+            <li class="results__item results__item-girl">
+              <blockquote class="results__item-quote">The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.</blockquote>
+              <p class="results__name">Kady Baker</p>
+              <p class="results__text">Product Manager at Bookmark</p>
             </li>
 
-            <li class="result-list__item result-item result-item__woman">
-              <blockquote class="result-item__quote">We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!</blockquote>
-              <p class="result-item__name">Aiysha Reese</p>
-              <p class="result-item__text">Founder of Manage</p>
+            <li class="results__item results__item-woman">
+              <blockquote class="results__item-quote">We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!</blockquote>
+              <p class="results__name">Aiysha Reese</p>
+              <p class="results__text">Founder of Manage</p>
             </li>
 
-            <li class="result-list__item result-item result-item__man">
-              <blockquote class="result-item__quote">Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month</blockquote>
-              <p class="result-item__name">Arthur Clarke</p>
-              <p class="result-item__text">Co-founder of MyPhysio</p>
+            <li class="results__item results__item-man">
+              <blockquote class="results__item-quote">Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month</blockquote>
+              <p class="results__name">Arthur Clarke</p>
+              <p class="results__text">Co-founder of MyPhysio</p>
             </li>
           </ul>
         </div>
@@ -65,7 +64,7 @@
   </main>
 
   <script>
-    var elMenuToggler = document.querySelector('.menu-toggler')
+    var elMenuToggler = document.querySelector('.button')
     var elMenu = document.querySelector('.site-header-nav')
 
     elMenuToggler.addEventListener('click', function ()
