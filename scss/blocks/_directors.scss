@@ -1,6 +1,12 @@
 .directors {
   padding: 140px 0;
   background-color: #004047;
+
+  background-image: url("../img/nimadur.svg"),
+  url("../img/tortburchak.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px, 147px 100px;
+  background-position: calc(50% - 675px) top, calc(50% + 600px) bottom;
 }
 
 .directors__title {
@@ -26,6 +32,7 @@
 }
 
 .directors__item {
+  position: relative;
   min-width: 350px;
   background-color: #012F34;
   display: flex;
@@ -35,18 +42,155 @@
   margin-bottom: 76px;
 }
 
+.directors__button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  bottom: -30px;
+}
+
+.directors__item--open {
+  position: relative;
+  min-width: 350px;
+  background-color: #012F34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px 56px;
+  margin-bottom: 76px;
+}
+
+.directors__item--open .directors__minus {
+  position: absolute;
+  background: transparent;
+  border: none;
+  bottom: -30px;
+  left: 141px;
+}
+
+.directors__item--open .directors__inner-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directors__item--open .directors__name-open {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.directors__item--open .directors__info {
+  max-width: 254px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.directors__item--open .directors__media {
+  display: flex;
+}
+
+.directors__item--open .directors__twitter {
+  vertical-align: middle;
+  margin-left: auto;
+}
+
+.directors__item--open .directors__faceboook {
+  vertical-align: middle;
+}
+
 .directors__inner {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.directors__inner::before {
+
+
+.directors__avatar0::before {
   content: "";
   width: 96px;
   height: 96px;
   margin-bottom: 16px;
   background-image: url("../img/Oval.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar1::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar2::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar3::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar4::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar5::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man4.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -75,4 +219,98 @@
   line-height: 25px;
   text-align: center;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1320px) {
+  .directors {
+    background-image: url("../img/nimadur.svg"),
+    url("../img/tortburchak.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px, 147px 100px;
+    background-position: left -100px top, right bottom;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  .directors {
+    padding: 100px 100px;
+
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .directors {
+    padding: 100px 70px;
+  }
+}
+
+@media only screen and (max-width: 895px) {
+  .directors {
+    padding: 100px 40px;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .directors {
+    padding: 100px 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .directors {
+    padding: 100px 50px;
+  }
+
+  .directors__item {
+    min-width: 281px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .directors {
+    padding: 100px 60px;
+  }
+
+  .directors__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .directors__item {
+    min-width: 327px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .directors {
+    padding: 100px 10px;
+    background-image: url("../img/nimadur.svg"),
+    url("../img/tortburchak.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px, 147px 100px;
+    background-position: left -100px top -100px, right bottom;
+  }
+
+  .directors__item {
+    min-width: 327px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .directors {
+    padding: 100px 0px;
+  }
+
+  .directors__item {
+    min-width: 327px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

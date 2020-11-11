@@ -27,6 +27,11 @@
   padding: 12px 20px;
   text-decoration: none;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.sitenav__link:hover,
+.sitenav__link:active {
+  color: #F67E7E;
 }
 
 .sitenav__link--contact {
@@ -41,6 +46,13 @@
   border: 2px solid white;
   border-radius: 24px;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.sitenav__link--contact:hover,
+.sitenav__link--contact:active {
+  background-color: #fff;
+  color: black;
 }
 
 @media only screen and (max-width: 768px) {

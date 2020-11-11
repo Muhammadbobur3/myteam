@@ -211,6 +211,13 @@ img {
   padding: 12px 20px;
   text-decoration: none;
   white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sitenav__link:hover,
+.sitenav__link:active {
+  color: #F67E7E;
 }
 
 .sitenav__link--contact {
@@ -225,6 +232,14 @@ img {
   border: 2px solid white;
   border-radius: 24px;
   white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sitenav__link--contact:hover,
+.sitenav__link--contact:active {
+  background-color: #fff;
+  color: black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -925,6 +940,14 @@ img {
   border: 2px solid #012F34;
   border-radius: 29px;
   white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.start__link:hover,
+.start__link:active {
+  background-color: #012F34;
+  color: #fff;
 }
 
 @media only screen and (max-width: 1205px) {
@@ -1102,6 +1125,10 @@ img {
 .directors {
   padding: 140px 0;
   background-color: #004047;
+  background-image: url("../img/nimadur.svg"), url("../img/tortburchak.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px, 147px 100px;
+  background-position: calc(50% - 675px) top, calc(50% + 600px) bottom;
 }
 
 .directors__title {
@@ -1132,6 +1159,7 @@ img {
 }
 
 .directors__item {
+  position: relative;
   min-width: 350px;
   background-color: #012F34;
   display: -webkit-box;
@@ -1148,6 +1176,92 @@ img {
   margin-bottom: 76px;
 }
 
+.directors__button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  bottom: -30px;
+}
+
+.directors__item--open {
+  position: relative;
+  min-width: 350px;
+  background-color: #012F34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 24px 56px;
+  margin-bottom: 76px;
+}
+
+.directors__item--open .directors__minus {
+  position: absolute;
+  background: transparent;
+  border: none;
+  bottom: -30px;
+  left: 141px;
+}
+
+.directors__item--open .directors__inner-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.directors__item--open .directors__name-open {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.directors__item--open .directors__info {
+  max-width: 254px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.directors__item--open .directors__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.directors__item--open .directors__twitter {
+  vertical-align: middle;
+  margin-left: auto;
+}
+
+.directors__item--open .directors__faceboook {
+  vertical-align: middle;
+}
+
 .directors__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1161,12 +1275,77 @@ img {
           flex-direction: column;
 }
 
-.directors__inner::before {
+.directors__avatar0::before {
   content: "";
   width: 96px;
   height: 96px;
   margin-bottom: 16px;
   background-image: url("../img/Oval.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar1::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar2::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar3::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar4::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__avatar5::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/man4.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1195,6 +1374,154 @@ img {
   line-height: 25px;
   text-align: center;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1320px) {
+  .directors {
+    background-image: url("../img/nimadur.svg"), url("../img/tortburchak.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px, 147px 100px;
+    background-position: left -100px top, right bottom;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  .directors {
+    padding: 100px 100px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .directors {
+    padding: 100px 70px;
+  }
+}
+
+@media only screen and (max-width: 895px) {
+  .directors {
+    padding: 100px 40px;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .directors {
+    padding: 100px 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .directors {
+    padding: 100px 50px;
+  }
+  .directors__item {
+    min-width: 281px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .directors {
+    padding: 100px 60px;
+  }
+  .directors__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .directors__item {
+    min-width: 327px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .directors {
+    padding: 100px 10px;
+    background-image: url("../img/nimadur.svg"), url("../img/tortburchak.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px, 147px 100px;
+    background-position: left -100px top -100px, right bottom;
+  }
+  .directors__item {
+    min-width: 327px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .directors {
+    padding: 100px 0px;
+  }
+  .directors__item {
+    min-width: 327px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.clients {
+  padding-top: 140px;
+  padding-bottom: 85px;
+  background-color: #012F34;
+  background-image: url("../img/Group.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: calc(50% - 575px) top;
+}
+
+.clients__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients__item:not(:first-child) {
+  margin-left: 80px;
+}
+
+.clients__link {
+  display: block;
+}
+
+.clients__img {
+  display: block;
+}
+
+@media only screen and (max-width: 1320px) {
+  .clients {
+    background-color: #012F34;
+    background-image: url("../img/Group.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: left top;
+  }
 }
 
 .footer {

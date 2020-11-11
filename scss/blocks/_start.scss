@@ -36,6 +36,13 @@
   border: 2px solid #012F34;
   border-radius: 29px;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.start__link:hover,
+.start__link:active {
+  background-color: #012F34;
+  color: #fff;
 }
 
 @media only screen and (max-width: 1205px) {

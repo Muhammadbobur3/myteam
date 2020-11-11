@@ -1,0 +1,55 @@
+.clients {
+  padding-top: 140px;
+  padding-bottom: 85px;
+  background-color: #012F34;
+  background-image: url("../img/Group.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: calc(50% - 575px) top;
+}
+
+.clients__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.clients__item:not(:first-child) {
+  margin-left: 80px;
+}
+
+.clients__link {
+  display: block;
+}
+
+.clients__img {
+  display: block;
+}
+
+@media only screen and (max-width: 1320px) {
+  .clients {
+    background-color: #012F34;
+    background-image: url("../img/Group.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: left top;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+}
