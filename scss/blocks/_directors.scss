@@ -1,0 +1,78 @@
+.directors {
+  padding: 140px 0;
+  background-color: #004047;
+}
+
+.directors__title {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.directors__list {
+  padding: 0;
+  margin: 0;
+  margin-top: 64px;
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.directors__item {
+  min-width: 350px;
+  background-color: #012F34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px 56px;
+  margin-bottom: 76px;
+}
+
+.directors__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.directors__inner::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+  background-image: url("../img/Oval.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: block;
+}
+
+.directors__name {
+  margin: 0;
+  text-align: center;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+
+.directors__profession {
+  margin: 0;
+  margin-top: 2px;
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
