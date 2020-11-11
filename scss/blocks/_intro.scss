@@ -1,0 +1,112 @@
+.intro {
+  background-color: #014E56,;
+  padding-top: 129px;
+  padding-bottom: 250px;
+  background-image: url("../img/didiskleft.svg"),
+  url("../img/diskright.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px, 358px 200px;
+  background-position: calc(50% - 680px) 122px, calc(50% + 350px) 475px;
+}
+
+.intro__container {
+  display: flex;
+}
+
+.intro__title {
+  width: 530px;
+  margin: 0;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.intro__span {
+  color: #F67E7E;
+}
+
+.intro__text {
+  position: relative;
+  margin-left: 60px;
+  max-width: 445px;
+  margin-bottom: 0;
+  margin-top: auto;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.intro__text::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+  left: 0;
+  bottom: 150%;
+  display: block;
+}
+
+@media only screen and (max-width: 1075px) {
+  .intro {
+    padding-top: 112px;
+    background-image: url("../img/diskright.svg");
+    background-repeat: no-repeat;
+    background-size: 358px 200px;
+    background-position: center 480px;
+  }
+
+  .intro__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__title {
+    max-width: 380px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .intro__text {
+    max-width: 457px;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__text::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .intro {
+    padding-top: 80px;
+    padding-bottom: 197px;
+    background-image: url("../img/diskright.svg");
+    background-repeat: no-repeat;
+    background-size: 358px 200px;
+    background-position: center 420px;
+  }
+
+  .intro__title {
+    max-width: 230px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
