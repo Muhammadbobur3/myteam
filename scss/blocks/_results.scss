@@ -88,7 +88,6 @@
 }
 
 .results__item-quote {
-  min-width: 350px;
   font-family: "Livvic";
   font-style: normal;
   font-weight: 600;
@@ -142,6 +141,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .results__item {
@@ -168,17 +170,18 @@
     flex-wrap: wrap;
   }
 
-  .results__item {
-    width: 45%;
-
-  }
-
   .result__item-quote {
     max-width: 450px;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .results__list {
+    max-width: 500px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .results__item {
     justify-content: center;
@@ -197,21 +200,48 @@
 }
 
 @media only screen and (max-width: 530px) {
+  .results__list {
+    max-width: 400px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .results__item {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10;
-    padding-top: 30px;
+  }
+
+  .result__item-quote {
+    max-width: 380px;
   }
 }
 
 @media only screen and (max-width: 430px) {
-  .results__list {
-    margin-top: 0px;
+  .results__title {
+    max-width: 327px;
+    font-size: 40px;
+    line-height: 40px;
   }
+
+  .results__list {
+    max-width: 400px;
+    margin-top: 0px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
+  .results__list {
+    max-width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .results__item {
     margin-left: 5px;
     margin-right: 5px;
@@ -223,5 +253,9 @@
   .results__title {
     font-size: 32px;
     line-height: 32px;
+  }
+
+  .result__item-quote {
+    max-width: 365px;
   }
 }

@@ -1,0 +1,87 @@
+.start {
+  padding: 76px 210px 76px 263px;
+  background-color: #F67E7E;
+  background-image: url("../img/pink.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 244px;
+  background-position: left calc(50% + 72px);
+}
+
+.start__container {
+  display: flex;
+  align-items: center;
+}
+
+.start__title {
+  margin: 0;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+}
+
+.start__link {
+  max-width: 153px;
+  margin-left: auto;
+  text-decoration: none;
+  padding: 10px 32px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012F34;
+  border: 2px solid #012F34;
+  border-radius: 29px;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 1205px) {
+  .start {
+    padding: 84px 97px;
+    background-image: url("../img/pink.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 244px;
+    background-position: left calc(50% + 102px);
+  }
+
+  .start__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .start {
+    padding: 83px 24px;
+    background-image: url("../img/pink.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 244px;
+    background-position: left calc(50% + 170px);
+  }
+
+  .start__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .start__title {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .start__link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+}
