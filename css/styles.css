@@ -2,6 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
   height: 100%;
 }
 
@@ -1046,6 +1047,13 @@ img {
   line-height: 25px;
   color: #FFFFFF;
   opacity: 0.6;
+}
+
+.footer__tel {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
 }
 
 .footer__social-media {
