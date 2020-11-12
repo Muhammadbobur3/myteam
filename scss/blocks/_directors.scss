@@ -47,6 +47,7 @@
   background: transparent;
   border: none;
   bottom: -30px;
+  left: 141px;
 }
 
 .directors__item--open {
@@ -60,7 +61,7 @@
   margin-bottom: 76px;
 }
 
-.directors__item--open .directors__minus {
+.directors__minus {
   position: absolute;
   background: transparent;
   border: none;
@@ -68,13 +69,13 @@
   left: 141px;
 }
 
-.directors__item--open .directors__inner-open {
+.directors__about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.directors__item--open .directors__name-open {
+.directors__about-name {
   margin-top: 0;
   margin-bottom: 8px;
   font-family: "Livvic";
@@ -86,7 +87,7 @@
   color: #79C8C7;
 }
 
-.directors__item--open .directors__info {
+.directors__info {
   max-width: 254px;
   margin: 0;
   margin-bottom: 24px;
@@ -99,16 +100,17 @@
   color: #FFFFFF;
 }
 
-.directors__item--open .directors__media {
+.directors__media {
   display: flex;
+  justify-content: center;
 }
 
-.directors__item--open .directors__twitter {
+.directors__twitter {
   vertical-align: middle;
   margin-left: auto;
 }
 
-.directors__item--open .directors__faceboook {
+.directors__faceboook {
   vertical-align: middle;
 }
 
@@ -221,6 +223,27 @@
   color: #FFFFFF;
 }
 
+.directors__about {
+  display: none;
+}
+
+
+
+.directors__item .directors__item--open {
+  display: none;
+}
+.directors__item  .directors__avatar2{
+  display: block;
+}
+
+.directors__item--open .directors__about {
+  display: block;
+}
+
+.directors__item--open .directors__inner {
+  display: none;
+}
+
 @media only screen and (max-width: 1320px) {
   .directors {
     background-image: url("../img/nimadur.svg"),
@@ -248,6 +271,8 @@
   .directors {
     padding: 100px 40px;
   }
+
+
 }
 
 @media only screen and (max-width: 865px) {

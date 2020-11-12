@@ -34,6 +34,7 @@
 
 .clients__link {
   display: block;
+  flex-shrink: 0;
 }
 
 .clients__img {
@@ -51,5 +52,39 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .clients__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .clients__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .clients {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-image: url("../img/Group.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: left -100px top -100px;
+  }
+
+  .clients__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients__item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .clients__item:not(:last-child) {
+    margin-bottom: 55px;
+  }
 }
